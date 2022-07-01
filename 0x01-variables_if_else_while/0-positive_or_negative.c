@@ -1,12 +1,13 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+/**
+*main ->print whether the number n is positive or negative
+*based a condtion
+*Return->alwways 0
+*/
 int main(void)
 {
-/**
-*main function is identify the number
-*negative or  positive
-*/
 int n;
 srand(time(0));
 n = rand() - RAND_MAX / 2;
