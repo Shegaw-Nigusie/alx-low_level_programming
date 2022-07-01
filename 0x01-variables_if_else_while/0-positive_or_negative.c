@@ -7,7 +7,7 @@
 *based a condtion
 *Return->alwways  true
 */
-int main()/*this specifies there are no arguments taken by main*/
+int main(void)/*this specifies there are no arguments taken by main*/
 {
 int n;
 srand(time(0));
