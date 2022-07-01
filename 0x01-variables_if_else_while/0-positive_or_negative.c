@@ -9,6 +9,10 @@
 */
 int main(void)
 {
+/**
+*main function is identify the number
+*negative or  positive
+*/
 int n;
 srand(time(0));
 n = rand() - RAND_MAX / 2;
