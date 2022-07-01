@@ -7,8 +7,9 @@
 *based a condtion
 *Return->alwways 0
 */
-int main(void)/*this specifies there are no arguments taken by main*/
+int main(void)
 {
+printf("this is main function");
 int n;
 srand(time(0));
 n = rand() - RAND_MAX / 2;
