@@ -12,15 +12,15 @@ printf("Enter any number: ");
 scanf("%d", &n);
 
 
-if(num > 0)
+if (num > 0)
 {
-printf("%dNumber is POSITIVE\n", n);
+printf("%d Number is POSITIVE\n", n);
 }
-if(num < 0)
+if (num < 0)
 {
-printf("%dNumber is NEGATIVE\n", n);
+printf("%d Number is NEGATIVE\n", n);
 }
-if(num == 0)
+if (num == 0)
 {
 printf("%d Number is ZERO\n", n);
 }
