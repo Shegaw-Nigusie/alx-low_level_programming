@@ -5,7 +5,7 @@
 /**
 *main ->print whether the number n is positive or negative
 *based a condtion
-*Return->alwways  true
+*Return->alwways 0
 */
 int main(void)/*this specifies there are no arguments taken by main*/
 {
