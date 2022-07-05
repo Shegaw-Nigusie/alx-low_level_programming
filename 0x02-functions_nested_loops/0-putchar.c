@@ -1,9 +1,12 @@
+/*
+ * File: 0-putchar.c
+ * Auth: shegaw2
+ */
 #include "main.h"
 /**
 * main > prints _putchar, followed by a new line
 * return: always 0
 */
-
 int main(void)
 {
 _putchar('_');
