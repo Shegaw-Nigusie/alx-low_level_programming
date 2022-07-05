@@ -4,9 +4,12 @@
  */
 #include "main.h"
 /**
-* main > prints _putchar, followed by a new line
-* return: always 0
-*/
+ * main - print putchar folowed by new line
+ * 
+ * Description: 'the program's description'
+ * 
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 _putchar('_');
