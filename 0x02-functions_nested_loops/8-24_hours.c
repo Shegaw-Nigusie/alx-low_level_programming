@@ -1,5 +1,5 @@
 /*
- * File: 8-24_hours.c
+ * File: git status
  * Auth: shegaw2
  */
 
