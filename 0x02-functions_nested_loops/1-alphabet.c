@@ -1,4 +1,4 @@
-/*
+/**
  * File: 1-alphabet.c
  * Auth: shegaw2
  */
