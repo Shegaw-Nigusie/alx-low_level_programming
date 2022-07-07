@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  * print_square - entry point
@@ -28,4 +28,3 @@ void print_square(int size)
 		}
 	}
 }
-Footer
