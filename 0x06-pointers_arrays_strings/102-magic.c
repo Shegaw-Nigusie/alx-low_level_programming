@@ -1,3 +1,7 @@
+/*
+ * File: 102-magic.c
+ * Auth: Shegaw Nigusie
+ */
 #include <stdio.h>
 
 int main(void)
