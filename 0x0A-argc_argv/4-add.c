@@ -1,6 +1,6 @@
 /*
  * File: 4-add.c
- * Auth: Brennan D Baraban
+ * Auth: shegaw
  */
 
 #include <stdio.h>
