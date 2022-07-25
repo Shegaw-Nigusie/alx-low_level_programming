@@ -1,39 +1,53 @@
 /*
- * File: 100-strtow.c
+ * File: 100-argstostr.c
  * Auth: shegaw
  */
 
 #include "main.h"
 #include <stdlib.h>
 
-int word_len(char *str);
-int count_words(char *str);
-char **strtow(char *str);
-
 /**
- * word_len - Locates the index marking the end of the
- *            first word contained within a string.
- * @str: The string to be searched.
+ * argstostr - Concatenates all arguments of the program into a string;
+ *             arguments are separated by a new line in the string.
+ * @ac: The number of arguments passed to the program.
+ * @av: An array of pointers to the arguments.
  *
- * Return: The index marking the end of the initial word pointed to by str.
+ * Return: If ac == 0, av == NULL, or the function fails - NULL.
+ *         Otherwise - a pointer to the new string.
  */
-int word_len(char *str)
+char *argstostr(int ac, char **av)
 {
-	int index = 0, len = 0;
+	char *str;
+	int arg, byte, index, size = ac;
 
-	while (*(str + index) && *(str + index) != ' ')
+	if (ac == 0 || av == NULL)
+		return (NULL);
+
+	for (arg = 0; arg < ac; arg++)
 	{
-		len++;
-		index++;
+		for (byte = 0; av[arg][byte]; byte++)
+			size++;
 	}
 
-	return (len);
-}
+	str = malloc(sizeof(char) * size + 1);
 
-/**
- * count_words - Counts the number of words contained within a string.
- * @str: The string to be searched.
- *
+	if (str == NULL)
+		return (NULL);
+
+	index = 0;
+
+	for (arg = 0; arg < ac; arg++)
+	{
+		for (byte = 0; av[arg][byte]; byte++)
+			str[index++] = av[arg][byte];
+
+		str[index++] = '\n';
+	}
+
+	str[size] = '\0';
+
+	return (str);
+}
  * Return: The number of words contained within str.
  */
 int count_words(char *str)
