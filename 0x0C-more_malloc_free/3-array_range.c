@@ -1,6 +1,6 @@
 /*
  * File: 3-array_range.c
- * Auth: 
+ * Auth: shegaw
  */
 
 #include "main.h"
