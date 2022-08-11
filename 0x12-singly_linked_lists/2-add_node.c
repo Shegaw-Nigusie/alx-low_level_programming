@@ -3,7 +3,7 @@
  * Auth: shegaw
  */
 
-#include "lists.h"
+#include "main.h"
 #include <string.h>
 
 /**
