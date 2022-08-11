@@ -3,22 +3,28 @@
  * Auth: shegaw
  */
 
-#include "main.h"
 #include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include "main.h"
 
 /**
- * free_list - Frees a list_t list.
- * @head: A pointer to the list_t list.
+ * main - check the code
+ *
+ * Return: Always 0.
  */
-void free_list(list_t *head)
+int main(void)
 {
-	list_t *tmp;
+    list_t *head;
 
-	while (head)
-	{
-		tmp = head->next;
-		free(head->str);
-		free(head);
-		head = tmp;
-	}
+    head = NULL;
+    add_node_end(&head, "Bob");
+    add_node_end(&head, "&");
+    add_node_end(&head, "Kris");
+    add_node_end(&head, "love");
+    add_node_end(&head, "asm");
+    print_list(head);
+    free_list(head);
+    head = NULL;
+    return (0);
 }
