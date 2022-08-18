@@ -1,1 +1,1 @@
-this is bit manuplation
+This is Bit Manuplation
