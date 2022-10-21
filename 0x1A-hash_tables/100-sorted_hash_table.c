@@ -1,6 +1,6 @@
 /*
  * File: 100-sorted_hash_table.c
-
+* Auth: Shegaw
  */
 
 #include "hash_tables.h"
