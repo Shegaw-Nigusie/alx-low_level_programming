@@ -1,6 +1,6 @@
 /*
  * File: 2-key_index.c
- 
+ * Auth: Shegaw
 */
 
 #include "hash_tables.h"
